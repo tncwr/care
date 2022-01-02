@@ -17,12 +17,10 @@ class UCCBedRequestSerializer(serializers.ModelSerializer):
         exclude = (
             "deleted",
             "modified_date",
-            "external_id",
-            "id"
+            "external_id"
         )
         read_only_fields = (
             TIMESTAMP_FIELDS,
-            "id",
             "created_date",
         )
 
