@@ -50,6 +50,7 @@ from care.users.api.viewsets.lsg import DistrictViewSet, LocalBodyViewSet, State
 from care.users.api.viewsets.skill import SkillViewSet
 from care.users.api.viewsets.users import UserViewSet
 from care.users.api.viewsets.userskill import UserSkillViewSet
+from care.facility.api.viewsets.uccbedrequest import UCCBedRequestViewSet
 
 if settings.DEBUG:
     router = DefaultRouter()
@@ -141,6 +142,7 @@ facility_nested_router.register(r"asset_location", AssetLocationViewSet)
 router.register("asset", AssetViewSet)
 router.register("asset_transaction", AssetTransactionViewSet)
 
+router.register("ucc_bed_request", UCCBedRequestViewSet)
 
 patient_nested_router = NestedSimpleRouter(router, r"patient", lookup="patient")
 patient_nested_router.register(r"test_sample", PatientSampleViewSet)
