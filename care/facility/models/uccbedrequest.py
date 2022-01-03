@@ -90,6 +90,10 @@ class UCCBedRequest(FacilityBaseModel):
     priority_status = models.IntegerField(choices=PriorityStatusChoices, default=None)
     BedAllotmentStatus = models.IntegerField(choices=AllotmentStatusChoices, default=None)
     TriageID = models.IntegerField(null=True, default=None)
+    ReferenceID = models.IntegerField(null=True, default=None)
+    PriorityDate = models.DateTimeField(null=True, blank=True)
+    TB = models.IntegerField(choices=BooleanValuesChoices, default=None)
+    PriorityRemarks = models.TextField(max_length=2000, null=True, default=None)
 
 
 
