@@ -31,10 +31,14 @@ ROOM_TYPES = [
     (0, "Total"),
     (2, "Hostel"),
     (3, "Single Room with Attached Bathroom"),
-    (40, "KASP Beds"),
-    (50, "KASP ICU beds"),
-    (60, "KASP Oxygen beds"),
-    (70, "KASP Ventilator beds"),
+    (40, "CMCHIS Beds"),
+    (50, "CMCHIS ICU beds"),
+    (60, "CMCHIS Oxygen beds"),
+    (70, "CMCHIS Ventilator beds"),
+    (111, "Pediatric Covid Ordinary Beds"),
+    (112, "Pediatric Covid Oxygen beds"),
+    (113, "Pediatric Covid ICU (ICU without ventilator)"),
+    (114, "Pediatric Covid Ventilators (ICU with ventilator)"),
 ]
 
 ROOM_TYPES.extend(BASE_ROOM_TYPES)
